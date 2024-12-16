@@ -81,6 +81,7 @@ WSGI_APPLICATION = 'outhinck.wsgi.application'
 #         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
@@ -92,9 +93,9 @@ DATABASES = {
         'USER': "neondb_owner",
         'PASSWORD': "jGVSigOR1mP9",
         'HOST': "ep-weathered-resonance-a5f5wsht-pooler.us-east-2.aws.neon.tech",
-        'HOST_UNPOOLED': "ep-weathered-resonance-a5f5wsht.us-east-2.aws.neon.tech",
     }
 }
+
 
 
 # Password validation
