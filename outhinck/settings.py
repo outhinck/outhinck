@@ -75,10 +75,24 @@ WSGI_APPLICATION = 'outhinck.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': "neondb",
+        'URL_NO_SSL': "postgres://neondb_owner:jGVSigOR1mP9@ep-weathered-resonance-a5f5wsht-pooler.us-east-2.aws.neon.tech/neondb",
+        'URL': "postgres://neondb_owner:jGVSigOR1mP9@ep-weathered-resonance-a5f5wsht-pooler.us-east-2.aws.neon.tech/neondb?sslmode=require",
+        'PRISMA_URL': "postgres://neondb_owner:jGVSigOR1mP9@ep-weathered-resonance-a5f5wsht-pooler.us-east-2.aws.neon.tech/neondb?pgbouncer=true&connect_timeout=15&sslmode=require",
+        'URL_NON_POOLING': "postgresql://neondb_owner:jGVSigOR1mP9@ep-weathered-resonance-a5f5wsht.us-east-2.aws.neon.tech/neondb?sslmode=require",
+        'USER': "neondb_owner",
+        'PASSWORD': "jGVSigOR1mP9",
+        'HOST': "ep-weathered-resonance-a5f5wsht-pooler.us-east-2.aws.neon.tech",
+        'HOST_UNPOOLED': "ep-weathered-resonance-a5f5wsht.us-east-2.aws.neon.tech",
     }
 }
 
